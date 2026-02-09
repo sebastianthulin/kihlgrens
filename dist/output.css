@@ -212,6 +212,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -301,6 +304,9 @@
   }
   .h-72 {
     height: calc(var(--spacing) * 72);
+  }
+  .h-full {
+    height: 100%;
   }
   .min-h-\[50vh\] {
     min-height: 50vh;
@@ -448,12 +454,6 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
-  }
-  .bg-gray-300 {
-    background-color: var(--color-gray-300);
-  }
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
   }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
