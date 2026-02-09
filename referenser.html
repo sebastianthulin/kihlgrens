@@ -229,7 +229,7 @@
 
     <!-- Image container -->
     <div class="flex items-center justify-center w-full h-full p-12 md:p-20">
-      <img id="lb-img" src="" alt="Referensprojekt" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-opacity duration-200">
+      <img id="lb-img" src="" alt="Referensprojekt" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl" style="transition: opacity 0.3s ease;">
     </div>
   </div>
 
@@ -258,9 +258,13 @@
       function show() {
         lbImg.style.opacity = '0';
         var src = items[current].getAttribute('data-full');
-        lbImg.onload = function() { lbImg.style.opacity = '1'; };
-        lbImg.src = src;
         lbCounter.textContent = (current + 1) + ' / ' + total;
+        setTimeout(function() {
+          lbImg.onload = function() {
+            requestAnimationFrame(function() { lbImg.style.opacity = '1'; });
+          };
+          lbImg.src = src;
+        }, 300);
       }
 
       function prev() {
