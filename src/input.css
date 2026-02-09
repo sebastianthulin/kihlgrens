@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@source "../*.html";
+@plugin "flowbite/plugin";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-primary: #0f172a;
+  --color-brand-accent: #2563eb;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-heading: 'Lexend', 'Poppins', system-ui, sans-serif;
+}
+
+:root {
+  --brand-primary: #0f172a;
+  --brand-accent: #2563eb;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@utility hero-overlay {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@utility nav-link {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+@utility nav-link-active {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
