@@ -1,0 +1,25 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:spacer {"height":"90px"} -->
+<div style="height:90px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"80px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group alignwide" style="padding-top:40px;padding-right:24px;padding-bottom:80px;padding-left:24px"><!-- wp:heading {"level":1,"className":"text-4xl font-heading font-bold mb-6"} -->
+<h1 class="wp-block-heading text-4xl font-heading font-bold mb-6">Blogg</h1>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"displayLayout":{"type":"list"}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:group {"className":"border-b border-gray-200 pb-6 mb-6"} -->
+<div class="wp-block-group border-b border-gray-200 pb-6 mb-6"><!-- wp:post-title {"isLink":true,"className":"text-2xl font-heading font-semibold"} /-->
+
+<!-- wp:post-excerpt /-->
+
+<!-- wp:post-date {"className":"text-sm text-gray-500"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
