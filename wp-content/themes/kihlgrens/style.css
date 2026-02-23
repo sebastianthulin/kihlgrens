@@ -1,0 +1,22 @@
+/*
+Theme Name: Kihlgrens Block Theme
+Theme URI: https://example.com/
+Author: Kihlgrens
+Description: Modern block-based theme for Kihlgrens Byggplåt AB using Gutenberg blocks.
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 8.0
+Version: 1.0.0
+Text Domain: kihlgrens
+*/
+
+/* Base adjustments for WordPress elements */
+.wp-site-blocks {
+  background-color: #ffffff;
+}
+
+.is-style-transparent-header {
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+}
+
